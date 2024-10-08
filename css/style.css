@@ -3,6 +3,7 @@
 html{
     max-width: 100%;
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -30,6 +31,16 @@ html{
     flex-grow: 1;
     width: 100%;
     height: auto;
+}
+.footer {
+    flex-shrink: 0;
+    background-color: #102025;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 486px 59px 151px;
 }
 /*-------------------------------HEADER-------------------------------------*/
 
@@ -884,6 +895,7 @@ html{
     padding-top: 46px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 91px;
 }
 .socials__container{
     display: flex;
@@ -898,18 +910,212 @@ html{
     font-family: 'Inter', sans-serif;
     font-size: 25px;
 }
-.socials a{
-}
+
 .socials a img{
     width: 72px;
     height: 72px;
 }
 /*----------------------------------------------------------------------------------*/
-.footer {
-    flex-shrink: 0;
+
+/*------------------------------------------FOOTER----------------------------------*/
+
+
+/*-----------------------------PRIVACY-POPUP + TERMS-POPUP------------------------------*/
+/*---------------------------------------------POP-UP--------------------------------------------------*/
+
+/* Основной контейнер модального окна */
+.pop_up_privacy, .pop_up_terms {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Поверх других элементов */
+    padding: 7vh 50vh;
+}
+
+/* Контейнер для содержимого модального окна */
+.pop_up_privacy_container, .pop_up_terms_container {
+    background-color: #fff; /* Белый фон */
+    max-width: 960px;
+    max-height: 754px;
+    padding: 80px 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Легкая тень для объема */
+    position: relative;
+}
+
+/* Контент модального окна */
+.pop_up_privacy_body, .pop_up_terms_body {
+    overflow-y: scroll;
+    max-height: 65vh; /* Ограничение по высоте окна для прокрутки контента */
+}
+.pop_up_privacy_body::-webkit-scrollbar,
+.pop_up_terms_body::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(26, 24, 47, 0.15);
+    border-radius: 5px;
+    height: 200px;
+}
+
+.pop_up_privacy_body::-webkit-scrollbar-thumb,
+.pop_up_terms_body::-webkit-scrollbar-thumb {
+    background: #F6D944;
+    border-radius: 5px;
+}
+/* Заголовок */
+.pop_up_privacy_body h3, .pop_up_terms_body h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Горизонтальная линия */
+.pop-up-privacy-line, .pop-up-terms-line {
+    width: 74px;
+    margin: 24px auto 24px auto;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #F6D944;
+}
+
+/* Параграфы внутри модального окна */
+.pop_up_privacy_body p, .pop_up_terms_body p {
+    font-family: 'Inter', sans-serif;
+
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 144%;
+}
+
+/* Ссылка внутри модального окна */
+.pop_up_privacy_body a, .pop_up_terms_body a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.pop_up_privacy_body a:hover,
+.pop_up_terms_body a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка закрытия */
+.popup_privacy_close, .popup_terms_close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.popup_privacy_close:hover,
+.popup_terms_close:hover {
+    color: #F6D944; /* Красный цвет при наведении */
+}
+#pop_up_terms {
+    display: none; /* Скрываем окно по умолчанию */
+}
+#popup_privacy {
+    display: none; /* Скрываем окно по умолчанию */
+}
+/*----------------------------------------------------------------------------------*/
+/*-----------------------------------------FOOTER-----------------------------------------*/
+
+.logo {
+}
+.footer__block-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.footer__block-1 img{
+
+}
+.footer__block-1 p{
+    width: 650px;
+    height: 92px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 144%;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+.footer__block-1 p:first-child{
+    padding-top: 53px;
+}
+.footer__txt{
+
+}
+.footer__block-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-weight: 400;
+    ont-size: 16px;
+    letter-spacing: 0.06em;
+    font-family: 'Inter', sans-serif;
+}
+.footer__block-2 a{
+    color: #FFFFFF;
+
+}
+.footer__block-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+    align-items: center;
+}
+.footer__block-3 a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.06em; 
+    font-family: 'Inter', sans-serif;
+    width: 217px;
+}
+.footer__flexbox-blocks{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footer__button{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #000;
+    height: 60px;
+    padding: 17px 34.5px;
+    border-radius: 28px;
+    background-color: #F6D944;
+    border: 0;
+    cursor: pointer;
+    width: 160px;
+    color: #000;
+    margin-right: 51;
+    
+}
+.footer__button a{
+    color: #000;
 }
 
 
+/*----------------------------------------------------------------------------------*/
 
 @font-face {
     font-family: "Bonnet Grotesque NR"; 
