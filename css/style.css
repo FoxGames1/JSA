@@ -177,7 +177,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 430px;
+    height: auto;
     padding-top: 130px;
     font-size: calc(44px + 20 * (100vw / 1160px));
 }
@@ -217,7 +217,6 @@ html{
     letter-spacing: 0.06em;
     text-align: center;
     color: #fff;
-    width: 157px;
     height: 60px;
     padding: 17px 34.5px;
     border-radius: 28px;
@@ -644,10 +643,11 @@ html{
 
 .portfolio {
     width: 100%;
-    height: 1190px;
+    height: 1140px;
     background-image: url(../img/main/Profiles/BG.png);
     background-position: center;
-    padding-top: 120px;
+    background-size: cover;
+    padding-top: 130px;
 }
 .portfolio h3{
     color: #fff;
@@ -661,6 +661,24 @@ html{
     text-transform: uppercase;
     text-align: left;
     margin-left: 70px;
+    padding-top: 30px;
+}
+.portfolio .button {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
+    height: 60px;
+    padding: 17px 34.5px;
+    border-radius: 28px;
+    background-color: #F6D944;
+    border: 0;
+    cursor: pointer;
+    width: 200px;
+    color: #000;
+    margin: 36px 501px 0 460px;
 }
 .portfolio__list {
     margin-left: 70px;
@@ -753,6 +771,139 @@ html{
 }
 
 
+/*----------------------------------------------------------------------------------*/
+
+/*-------------------------------------BULLETIN---------------------------------------------*/
+
+.bulletin{
+    width: 100%;
+    height: auto;
+    margin-top: 82px;
+}
+.bulletin h3{
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bonnet Grotesque NR';
+
+}
+.bulletin p{
+    width: 958px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 144%;
+    font-family: 'Inter', sans-serif;
+
+
+}
+.bulletin .line{
+    width: 98px;
+    border: 2.5px #F6D944 solid;
+    margin: 0 auto 24px auto;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+/*---------------------------------------SERVICES-------------------------------------------*/
+.contacts {
+    width: 100%;
+    height: auto;
+    margin-top: 87px;
+}
+.contacts h3{
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bonnet Grotesque NR';
+}
+.contacts .line {
+    width: 98px;
+    border: 2.5px #F6D944 solid;
+    margin: 0 auto 24px auto;
+}
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.contacts__container-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.card {
+    width: 315px;
+    margin: 0 auto;
+}
+.card img{
+    width: 133px;
+    height: 106px;
+    margin: 26px auto;
+}
+.card p{
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    line-height: 144%;
+    color: #102025;
+}
+.font_bold {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: #102025;
+    line-height: 144%;
+}
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/*--------------------------------------------------------------------------------------*/
+
+/*------------------------------------SOCIALS--------------------------------------------------*/
+
+.socials {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 46px;
+    display: flex;
+    flex-direction: column;
+}
+.socials__container{
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    padding-top: 32px;
+    align-items: center;
+}
+.socials h3{
+    width: 100%;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+}
+.socials a{
+}
+.socials a img{
+    width: 72px;
+    height: 72px;
+}
 /*----------------------------------------------------------------------------------*/
 .footer {
     flex-shrink: 0;
