@@ -78,7 +78,7 @@ html{
     width: 0; /* Линия изначально невидима */
     height: 3px;
     border-radius: 16px;
-    background-color: F6D944;
+    background-color: #F6D944;
     transition: width 0.3s ease; /* Анимация появления линии */
     
 }
@@ -174,6 +174,9 @@ html{
     text-align: center;
     color: #fff;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 430px;
     padding-top: 130px;
     font-size: calc(44px + 20 * (100vw / 1160px));
@@ -635,6 +638,121 @@ html{
     font-size: 36px;
     cursor: pointer;
 }
+/*----------------------------------------------------------------------------------*/
+
+/*---------------------------------PORTFOLIO---------------------------------------------*/
+
+.portfolio {
+    width: 100%;
+    height: 1190px;
+    background-image: url(../img/main/Profiles/BG.png);
+    background-position: center;
+    padding-top: 120px;
+}
+.portfolio h3{
+    color: #fff;
+    font-family: "Bonnet Grotesque NR"; 
+    width: 300;
+    height: 84px;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 0%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 70px;
+}
+.portfolio__list {
+    margin-left: 70px;
+    width: 1000px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.portfolio__list .filterDiv img{
+    width: 210px;
+    height: 340px;
+    display: block;
+}
+.portfolio__list .filterDiv:hover{
+    
+}
+
+.cards__container {
+    margin-top: 30px;
+    overflow: hidden;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 720px;
+    flex-wrap: wrap;
+  }
+  
+  .filterDiv {
+    float: left;
+    color: #ffffff;
+    width: 210px;
+    height: 340px;
+    line-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 2px;
+    display: none;
+  }
+  
+  /* В класс "show" добавляется к отфильтрованные элементы */
+  .show {
+    display: block;
+  }
+  
+  /* Стиль кнопок */
+  #myBtnContainer{
+    margin-left: 49%;
+  }
+  .btn {
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF; /* Цвет текста, как на фото */
+}
+
+.btn:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; /* Линия изначально невидима */
+    height: 3px;
+    border-radius: 16px;
+    background-color: #F6D944;
+    transition: width 0.3s ease; /* Анимация появления линии */
+}
+
+.btn:hover::after {
+    width: 30px; /* Линия будет полностью видна при наведении */
+}
+
+.btn.active {
+    background-color: transparent;
+    color: #FFFFFF; /* Цвет активного текста */
+}
+
+
 /*----------------------------------------------------------------------------------*/
 .footer {
     flex-shrink: 0;

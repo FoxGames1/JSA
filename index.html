@@ -128,7 +128,31 @@
                      </div>
                 </div>
 
+                <div class="portfolio">
+                    <h3>PLAYERS PORTFOLIO</h3>
+                    <div class="portfolio__list">
+                        <!-- Control buttons -->
+                        <div id="myBtnContainer">
+                            <button class="btn active" onclick="filterSelection('all')">All</button>
+                            <button class="btn" onclick="filterSelection('Goalkeepers')"> Goalkeepers</button>
+                            <button class="btn" onclick="filterSelection('Defenders')"> Defenders</button>
+                            <button class="btn" onclick="filterSelection('Midfielders')"> Midfielders</button>
+                            <button class="btn" onclick="filterSelection('Forwards')"> Forwards</button>
+                        </div>
 
+                          <!-- Фильтруемые элементы. Примечание что некоторые из них имеют несколько имен классов (это может быть использовано, если они принадлежат к нескольким категориям) -->
+                        <div class="cards__container">
+                            <div class="filterDiv Goalkeepers"><img src="img/main/Profiles/cards/Card-1.png" alt="Goalkeepers"></div>
+                            <div class="filterDiv Goalkeepers"><img src="img/main/Profiles/cards/Card-2.png" alt="Goalkeepers"></div>
+                            <div class="filterDiv Defenders"><img src="img/main/Profiles/cards/Card-3.png" alt="Goalkeepers"></div>
+                            <div class="filterDiv Defenders"><img src="img/main/Profiles/cards/Card-4.png" alt="Goalkeepers"></div>
+                            <div class="filterDiv Midfielders"><img src="img/main/Profiles/cards/Card-5.png" alt="Goalkeepers"></div>
+                            <div class="filterDiv Midfielders"><img src="img/main/Profiles/cards/Card-6.png" alt="Goalkeepers"></div>
+                            <div class="filterDiv Forwards"><img src="img/main/Profiles/cards/Card-7.png" alt="Goalkeepers"></div>
+                            <div class="filterDiv Forwards"><img src="img/main/Profiles/cards/Card-8.png" alt="Goalkeepers"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
